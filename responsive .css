@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+    .navbar .listItems {
+        display: none;
+    }
+
+    .navbar .hamburg {
+        display: block;
+    }
+
+    .navbar .offcanvas .listItems {
+        display: block;
+        margin-top: -16px;
+    }
+
+    .navbar .offcanvas .listItems li {
+        margin: 20px 0px;
+    }
+
+    .navbar .dropdownListItem {
+        margin: 0px !important;
+    }
+
+    .navbar .navLogo img {
+        width: 120px;
+    }
+
+    .mySwiper .swiperImage {
+        height: 400px;
+    }
+
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #22577a;
+    --primary-hover-color: #143449;
+    --secondary-color1: #38A3A5;
+    --secondary-color2: #57CC99;
+    --secondary-color3: #80ED99;
+    --text--primary-color: #38A3A51F;
+    --text--secondary-color: #5C788C;
+    --text-white-color: #fff
+}
+
+body {
+    font-family: 'Roboto' !important;
+    padding-bottom: 100px;
+}
+
+.topHeader {
+    background-color: #38A3A514;
+}
+
+.topHeader .divWrapper {
+    height: 46px;
+    align-items: center;
+}
+
+.topHeader .leftDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.topHeader .leftDiv .commonSpan {
+    font-size: 14px;
+    font-weight: 400;
+    color: #29363F;
+    cursor: pointer;
+}
+
+.topHeader .leftDiv span:first-child {
+    border-right: 1px solid #29363F;
+    padding-right: 20px;
+}
+
+.topHeader .leftDiv span i {
+    color: var(--secondary-color1);
+    margin: 0 2px;
+    font-size: 16px;
+}
+
+.topHeader .rightDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .topHeader .divWrapper {
+        height: auto;
+        padding: 6px 0px;
+    }
+
+    .topHeader .leftDiv {
+        flex-direction: column;
+        gap: 6px 0px;
+        align-items: start;
+    }
+
+    .topHeader .rightDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .topHeader .leftDiv span:first-child {
+        border-right: 0px solid #29363F;
+        padding-right: 0px;
+    }
+}
+
+.topHeader .rightDiv i {
+    color: #29363F;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* topHeader ends here  */
+
+.navbar .navbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+.navbar .menuListWrapper {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+}
+
+.navbar .listItems {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px;
+    gap: 30px;
+    margin: 0px;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #29363F;
+    cursor: pointer;
+}
+
+.navbar .dropdown-toggle {
+    background-color: transparent !important;
+    border: none;
+    color: #29363F !important;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #29363F;
+}
+
+.navbar .dropdown-toggle:focus {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar hr {
+    margin: 0px !important;
+    padding: 0;
+}
+
+.navbar .hamburg {
+    display: none;
+    font-size: 30px;
+}
+
+.navbar .hamburg i {
+    font-size: 22px;
+}
+
+.offcanvas {
+    width: 70% !important;
+}
+
+
+
+/* navbar end here  */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiperImage {
+    display: block;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.commonMT {
+    margin-top: 96px;
+}
+
+/* heroSection ends here  */
+
+
+.aboutContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.commonTag {
+    background-color: #38A3A51F;
+    color: var(--secondary-color1);
+    padding: 8px;
+    border-radius: 4px;
+    width: max-content;
+}
+
+.commonTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.commonDesc {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text--secondary-color);
+}
+
+.commonBtn {
+    background-color: var(--primary-color);
+    color: var(--text-white-color);
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.commonBtn i{
+    margin-left: 6px;
+}
