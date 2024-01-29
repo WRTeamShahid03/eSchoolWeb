@@ -13,12 +13,14 @@
     --secondary-color3: #80ED99;
     --text--primary-color: #38A3A51F;
     --text--secondary-color: #5C788C;
-    --text-white-color: #fff
+    --text-white-color: #fff;
+    --primary-background-color: #F2F5F7;
 }
 
 body {
     font-family: 'Roboto' !important;
     padding-bottom: 100px;
+    background-color: #fff;
 }
 
 .topHeader {
@@ -193,6 +195,10 @@ body {
 
 /* heroSection ends here  */
 
+.aboutUs {
+    background-color: white;
+}
+
 
 .aboutContentWrapper {
     display: flex;
@@ -201,6 +207,45 @@ body {
     justify-content: flex-start;
     gap: 24px;
 }
+
+
+.flex_column_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    padding: 0px 386px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+    .flex_column_center {
+        padding: 0px 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .flex_column_center {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .flex_column_center {
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .flex_column_center {
+        align-items: start;
+        justify-content: flex-start;
+        text-align: start;
+        padding: 0px 0px;
+    }
+}
+
 
 .commonTag {
     background-color: #38A3A51F;
@@ -213,7 +258,31 @@ body {
 .commonTitle {
     font-size: 40px;
     font-weight: 700;
-    line-height: 52px;
+}
+
+@media screen and (max-width: 767px) {
+    .commonTitle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .commonMT {
+        margin-top: 30px;
+    }
+
+    .commonTag {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .commonTitle {
+        font-size: 24px;
+    }
+
+    .commonSpan {
+        font-size: 14px;
+    }
 }
 
 .commonDesc {
@@ -233,6 +302,199 @@ body {
     font-weight: 400;
     margin-top: 12px;
 }
-.commonBtn i{
+
+.commonBtn i {
     margin-left: 6px;
+}
+
+/* aboutUS ends here  */
+
+.programs {
+    background-color: var(--primary-background-color);
+    padding: 70px;
+}
+
+.programs .programsCardWrapper {
+    margin-top: 80px;
+    position: relative;
+}
+
+.programs .programsCardWrapper .card {
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    margin: 12px 0px;
+}
+
+
+.programs .programsCardWrapper .card img {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.programs .programsCardWrapper .card .cardTitle {
+    background-color: white;
+    color: var(se);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .programs .programsCardWrapper .card .cardTitle {
+        font-size: 15px;
+        padding: 9px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .programs .programsCardWrapper .card .cardTitle {
+        font-size: 15px;
+        padding: 9px;
+    }
+}
+
+.programs .bulbImg {
+    position: absolute;
+    top: -172px;
+    left: -55px;
+}
+
+.programs .notesImg {
+    position: absolute;
+    right: -42px;
+    top: -59px;
+}
+
+@media screen and (max-width: 575px) {
+
+    .programs {
+        padding: 20px 0px;
+    }
+
+    .programs .programsCardWrapper {
+        margin-top: 20px;
+    }
+
+    .programs .sideImgs img {
+        display: none;
+    }
+}
+
+/* programs ends here  */
+
+
+.events .eventsCardWrapper {
+    margin-top: 80px;
+}
+
+.events .eventsCardWrapper .card {
+    border: none;
+    flex-direction: row;
+    gap: 16px;
+    margin: 12px 0px;
+    background-color: var(--primary-background-color);
+}
+
+.events .eventsCardWrapper .eventDateWrapper {
+    background-color: var(--primary-color);
+    color: var(--text-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+
+.events .eventDateWrapper .date {
+    font-size: 48px;
+    font-weight: 700;
+    width: 70px;
+    text-align: center;
+}
+
+.events .eventDateWrapper .month {
+    font-size: 20px;
+    font-weight: 400;
+    width: 234px;
+    text-align: center;
+}
+
+.events .eventsCardWrapper .eventDescWrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0px;
+    height: 140px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .events .eventsCardWrapper .eventDateWrapper {
+        width: 140px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .events .eventsCardWrapper .eventDescWrapper {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .events .eventsCardWrapper .eventDescWrapper {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .events .eventsCardWrapper .eventDescWrapper {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .events .eventsCardWrapper {
+        margin-top: 20px;
+    }
+
+    .events .eventDateWrapper .date {
+        font-size: 30px;
+    }
+
+    .events .eventDateWrapper .month {
+        font-size: 16px;
+    }
+
+    .events .eventsCardWrapper .eventDateWrapper {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+
+    .events .eventsCardWrapper .eventDescWrapper {
+        height: 200px;
+    }
+}
+
+.events .eventsCardWrapper .eventDescWrapper .eventTitle {
+    font-weight: 700;
+}
+
+.events .eventsCardWrapper .eventDescWrapper .eventDesc {
+    color: #5C788C;
+}
+
+.events .eventsCardWrapper .eventDescWrapper .readMore,
+.events .eventsCardWrapper .eventDescWrapper .eventDesc {
+    font-size: 14px;
+    font-weight: 500;
 }
