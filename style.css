@@ -19,7 +19,6 @@
 
 body {
     font-family: 'Roboto' !important;
-    padding-bottom: 100px;
     background-color: #fff;
 }
 
@@ -219,34 +218,6 @@ body {
     padding: 0px 386px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1399px) {
-    .flex_column_center {
-        padding: 0px 200px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .flex_column_center {
-        padding: 0px 100px;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .flex_column_center {
-        padding: 0px 50px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .flex_column_center {
-        align-items: start;
-        justify-content: flex-start;
-        text-align: start;
-        padding: 0px 0px;
-    }
-}
-
-
 .commonTag {
     background-color: #38A3A51F;
     color: var(--secondary-color1);
@@ -294,13 +265,18 @@ body {
 .commonBtn {
     background-color: var(--primary-color);
     color: var(--text-white-color);
-    height: 50px;
-    width: 150px;
+    padding: 4px 10px;
     border: none;
     border-radius: 4px;
+    text-align: center;
     font-size: 20px;
     font-weight: 400;
     margin-top: 12px;
+    transition: background-color 0.3s;
+}
+
+.commonBtn:hover {
+    background-color: var(--primary-hover-color);
 }
 
 .commonBtn i {
@@ -497,4 +473,365 @@ body {
 .events .eventsCardWrapper .eventDescWrapper .eventDesc {
     font-size: 14px;
     font-weight: 500;
+}
+
+/* events ends here  */
+
+.ourPhotos {
+    background-color: var(--primary-background-color);
+    padding: 50px 0px;
+}
+
+.ourPhotos .flex_column_center {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+    width: 500px;
+    text-align: start;
+}
+
+@media screen and (max-width: 575px) {
+    .ourPhotos .flex_column_center {
+        width: 100%;
+    }
+}
+
+
+.ourPhotos .slider-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.ourPhotos .slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ourPhotos .swiperDataWrapper {
+    /* flex: 0 0 5%; */
+    box-sizing: border-box;
+    text-align: center;
+    width: 240px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+}
+
+.ourPhotos .navigationBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.prev i,
+.next i {
+    margin-left: 0px;
+}
+
+.ourPhotos .viewAllBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ourPhotos .viewAllBtn .commonBtn {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .ourPhotos .viewAllBtn .commonBtn {
+        font-size: 16px;
+    }
+
+    .ourPhotos .slider-container,
+    .ourPhotos .navigationBtns {
+        margin-top: 12px;
+    }
+}
+
+.ourVideos {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.ourPhotos .swiperDataWrapper:hover .festival {
+    visibility: visible;
+    margin-top: 134px;
+
+}
+
+.ourPhotos .festival {
+    position: absolute;
+    width: 92%;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: 240px;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.ourPhotos .festival span {
+    font-weight: 700;
+    color: var(--primary-hover-color);
+}
+
+.ourPhotos .festival span:last-child {
+    width: 26px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-color1);
+    border-radius: 4px;
+}
+
+/* ourPhotos & ourVideos ends here  */
+
+.faqs {
+    background-color: var(--primary-background-color);
+    padding: 50px 0px;
+}
+
+.faqs .accordion {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 575px) {
+    .faqs {
+        padding: 20px 0px;
+    }
+
+    .faqs .accordion {
+        margin-top: 30px;
+    }
+}
+
+
+.faqs .accordion-item {
+    border: 1px solid lightgray !important;
+    border-radius: 8px !important;
+    margin: 12px 0px;
+    overflow: hidden;
+}
+
+.faqs .accordion-button {
+    background-color: #22577A08;
+}
+
+.faqs .accordion-button span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #29363F !important;
+}
+
+.faqs .accordion-button:focus {
+    box-shadow: none !important;
+    border: none !important;
+    border-color: transparent !important;
+}
+
+.faqs .accordion-collapse span {
+    margin-top: -12px;
+    display: block;
+    color: var(--text--secondary-color) !important;
+    font-weight: 500;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+    background-color: var(--primary-background-color) !important;
+}
+
+.faqs .accordion-collapse {
+    background-color: var(--primary-background-color);
+    color: var(--text--secondary-color);
+}
+
+.faqs .accordion-button::after {
+    background-image: url("./Images/bx-plus-circle.png") !important;
+}
+
+.faqs .accordion-button:not(.collapsed)::after {
+    background-image: url("./Images/bx-minus-circle.png") !important;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+/* faqs ends here  */
+
+.ourApp .flex_column_center {
+    padding: 0px 300px;
+}
+
+.ourApp .wrapper {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 991px) {
+    .ourApp .wrapper {
+        margin-top: 20px;
+    }
+}
+
+.ourApp .card {
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 24px;
+    gap: 16px;
+    margin: 12px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourApp .card:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: var(--primary-hover-color);
+    border-radius: 16px;
+    /* opacity: 0.8; */
+    transition: all .3s ease-out;
+}
+
+.ourApp .card:hover:before {
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .ourApp .card {
+        padding: 12px 8px;
+    }
+}
+
+.ourApp span {
+    position: relative;
+    z-index: 1;
+}
+
+.ourApp .card img {
+    width: 60px;
+}
+
+.ourApp .appName {
+    color: var(--text-white-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.ourApp .demoBtn {
+    font-weight: 500;
+    border: 1px solid #ffff;
+    color: var(--text-white-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.ourApp .demoBtn i {
+    margin-left: 4px;
+}
+
+/* ourApp ends here  */
+
+footer {
+    background: rgba(56, 163, 165, 0.08);
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 575px) {
+    footer{
+        padding: 20px;
+    }
+}
+
+footer .companyInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+    gap: 30px;
+}
+
+footer .row {
+    gap: 30px 0px;
+}
+
+footer .socialIcons span {
+    background-color: #38A3A51F;
+    color: var(--secondary-color1);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 28px;
+    margin: 0px 6px;
+    cursor: pointer;
+}
+
+footer .linksWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+footer .linksWrapper .title {
+    color: #29363F;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width: 767px) {
+    footer .linksWrapper .title {
+        margin-bottom: 0px;
+    }
+}
+
+footer .usefulLinksDiv {
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 991px) {
+    footer .usefulLinksDiv {
+        margin-left: 0px;
+    }
+    footer .linksWrapper .title {
+        margin-bottom: 0px;
+    }
+}
+
+footer .iconsWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer .iconsWrapper .location {
+    font-size: 20px;
+    margin: 0px 4px;
+    margin-left: 2px;
+}
+
+footer .linksWrapper i {
+    color: var(--secondary-color1);
 }
