@@ -65,3 +65,14 @@
         padding: 0px 0px;
     }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .aboutUs .aboutImgWrapper .borderImg {
+        right: 72px;
+    }
+
+    .aboutUs .aboutImgWrapper .arrowImg {
+        width: 180px !important;
+        left: 70px;
+    }
+}
