@@ -1100,6 +1100,17 @@ footer .linksWrapper i {
     border-radius: 4px;
 }
 
+.loadmoreBtnWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.galleryVideos{
+    width: 100%;
+}
+
 /* photosGallery ends here  */
 
 .contactUs .flex_column_center {
