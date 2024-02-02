@@ -21,16 +21,27 @@
                     <div class="leftDiv">
                         <span class="commonSpan">
                             <i class="fa-solid fa-envelope-circle-check"></i>
-                            Schoolinfous@gmail.com</span>
-                        <span class="commonSpan"><i class="fa-solid fa-phone-volume"></i> ( +91 ) 12345 67890</span>
+                            <a href="mailto:Schoolinfous@gmail.com">Schoolinfous@gmail.com</a>
+                        </span>
+                        <span class="commonSpan"><i class="fa-solid fa-phone-volume"></i>
+                            <a href="tel:+91 12345 67890">( +91 ) 12345 67890</a>
+                        </span>
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-6">
                     <div class="rightDiv">
                         <span class="commonSpan">Follow Us:</span>
                         <span>
-                            <span><i class="fa-brands fa-square-facebook"></i></span>
-                            <span><i class="fa-brands fa-linkedin"></i></span>
+                            <span>
+                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </span>
                         </span>
                     </div>
                 </div>
@@ -45,7 +56,9 @@
             <div class="navbarWrapper">
                 <div class="navLogoWrapper">
                     <div class="navLogo">
-                        <img src="./Images/Logo.svg" alt="">
+                        <a href="index.html">
+                            <img src="./Images/Logo.svg" alt="">
+                        </a>
 
                     </div>
                 </div>
@@ -65,14 +78,14 @@
                                 </a>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Photos</a></li>
+                                    <li><a class="dropdown-item" href="/photos.html">Photos</a></li>
                                     <hr>
-                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="/videos.html">Videos</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="">Contact Us</a>
+                            <a href="/contact-us.html">Contact Us</a>
                         </li>
                     </ul>
                     <div class="hamburg">
@@ -97,8 +110,12 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="listItems">
-                        <li>Home</li>
-                        <li>About Us</li>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html">About Us</a>
+                        </li>
                         <li>
                             <div class="dropdown">
                                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
@@ -107,13 +124,15 @@
                                 </a>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li class="dropdownListItem"><a class="dropdown-item" href="#">Photos</a></li>
+                                    <li><a class="dropdown-item" href="/photos.html">Photos</a></li>
                                     <hr>
-                                    <li class="dropdownListItem"><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="/videos.html">Videos</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li>Contact Us</li>
+                        <li>
+                            <a href="/contact-us.html">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -127,16 +146,16 @@
         <section class="heroSection">
             <swiper-container class="mySwiper swiper-container" data-swiper-autoplay="1000" autoplay>
                 <swiper-slide>
-                    <img src="./Images/Image.png" alt="" class="swiperImage">
+                    <img src="./Images/heroImg1.png" alt="" class="swiperImage">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="https://picsum.photos/1920/650" alt="" class="swiperImage">
+                    <img src="./Images/heroImg2.png" alt="" class="swiperImage">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="https://picsum.photos/1920/650" alt="" class="swiperImage">
+                    <img src="./Images/heroImg3.png" alt="" class="swiperImage">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="https://picsum.photos/1920/650?n" alt="" class="swiperImage">
+                    <img src="./Images/heroImg4.png" alt="" class="swiperImage">
                 </swiper-slide>
             </swiper-container>
         </section>
@@ -147,13 +166,7 @@
                 <div class="row aboutWrapper">
                     <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="aboutImgWrapper">
-                            <!-- <img src="./Images/Blog_2.png" alt=""> -->
-                            <div class="img1"></div>
-                            <div class="img2"></div>
-                            <div class="coverImgs">
-                                <img src="./Images/arrow.svg" class="arrowImg" alt="">
-                                <img src="./Images/Vector.png" class="borderImg" alt="">
-                            </div>
+                            <img src="./Images/dummyImg.png" alt="">
                         </div>
                     </div>
 
@@ -175,7 +188,7 @@
                                 praesent quam.
                             </span>
                             <button class="commonBtn">
-                                Read More <i class="fa-solid fa-arrow-right"></i>
+                                <a href="/about-us.html">Read More </a> <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
                     </div>
@@ -385,54 +398,69 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="photosSwiper">
+
+
+                        <div class="commonSlider">
                             <div class="viewAllBtn">
-                                <button class="commonBtn">View All
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                <button class="commonBtn">
+                                    <a href="./photos.html">
+                                        View All
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
                                 </button>
                             </div>
 
                             <div class="slider-container">
                                 <div class="slider-content">
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
+
                                 </div>
 
-                                <!-- Navigation icons -->
                                 <div class="navigationBtns">
                                     <button class="prev commonBtn" onclick="changeSlide(-1)">
                                         <i class="fa-solid fa-arrow-left"></i>
@@ -469,51 +497,65 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="photosSwiper">
+                        <div class="commonSlider">
                             <div class="viewAllBtn">
-                                <button class="commonBtn">View All
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                <button class="commonBtn">
+                                    <a href="./videos.html">
+                                        View All
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
                                 </button>
                             </div>
 
                             <div class="slider-container">
                                 <div class="slider-content">
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="swiperDataWrapper">
+                                                <div>
+                                                    <img src="./Images/programImg.png" alt="">
+                                                </div>
+                                                <div class="festival">
+                                                    <span>Youth Festival 2024</span>
+                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="swiperDataWrapper">
-                                        <div>
-                                            <img src="./Images/programImg.png" alt="">
-                                        </div>
-                                        <div class="festival">
-                                            <span>Youth Festival 2024</span>
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
+
                                 </div>
 
                                 <!-- Navigation icons -->
@@ -729,92 +771,120 @@
             </div>
         </section>
         <!-- ourApp ends here  -->
-
-        <footer class="commonMT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="companyInfoWrapper">
-                            <div>
-                                <img src="./Images/Logo.svg" alt="">
-                            </div>
-                            <div>
-                                <span class="commonDesc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna.
-                                </span>
-                            </div>
-
-                            <div class="socialIcons">
-                                <span><i class="fa-brands fa-square-facebook"></i></span>
-                                <span><i class="fa-brands fa-square-instagram"></i></span>
-                                <span><i class="fa-brands fa-linkedin"></i></span>
-                                <span><i class="fa-brands fa-square-twitter"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="linksWrapper usefulLinksDiv">
-                            <span class="title">Useful Links</span>
-                            <span>Home</span>
-                            <span>About</span>
-                            <span>Photos</span>
-                            <span>Videos</span>
-                            <span>Contact</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="linksWrapper">
-                            <span class="title">Quick Links</span>
-                            <span>Admin Login</span>
-                            <span>Terms & Conditioins</span>
-                            <span>Privacy Policy</span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="linksWrapper">
-                            <span class="title">Quick Links</span>
-                            <span class="iconsWrapper">
-                                <span>
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                </span>
-                                <span>
-                                    (480) 555-0103
-                                </span>
-                            </span>
-                            <span class="iconsWrapper">
-                                <span>
-                                    <i class="fa-solid fa-envelope-circle-check"></i>
-                                </span>
-                                <span>
-                                    Testcompnay@mail,com
-                                </span>
-                            </span>
-                            <span class="iconsWrapper">
-                                <span>
-                                    <i class="fa-solid fa-location-dot location"></i>
-                                </span>
-                                <span>
-                                    4517 Washington Ave. Manchester, Kentucky
-                                    39495
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-
-
     </div>
+
+    <footer class="commonMT">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="companyInfoWrapper">
+                        <div>
+                            <a href="index.html">
+                                <img src="./Images/Logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <span class="commonDesc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </span>
+                        </div>
+
+                        <div class="socialIcons">
+                            <span>
+                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://twitter.com/wrteamin" target="_blank">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="linksWrapper usefulLinksDiv">
+                        <span class="title">Useful Links</span>
+                        <span><a href="/index.html">Home</a></span>
+                        <span><a href="/about-us.html">About Us</a></span>
+                        <span><a href="/photos.html">Photos</a></span>
+                        <span><a href="/videos.html">Videos</a></span>
+                        <span><a href="/contact-us.html">Contact Us</a></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="linksWrapper">
+                        <span class="title">Quick Links</span>
+                        <span>
+                            <a href="">
+                                Admin Login
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                Terms & Conditioins
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                Privacy Policy
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="linksWrapper">
+                        <span class="title">Quick Links</span>
+                        <span class="iconsWrapper">
+                            <span>
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+                            <span>
+                                (480) 555-0103
+                            </span>
+                        </span>
+                        <span class="iconsWrapper">
+                            <span>
+                                <i class="fa-solid fa-envelope-circle-check"></i>
+                            </span>
+                            <span>
+                                Testcompnay@mail,com
+                            </span>
+                        </span>
+                        <span class="iconsWrapper">
+                            <span>
+                                <i class="fa-solid fa-location-dot location"></i>
+                            </span>
+                            <span>
+                                4517 Washington Ave. Manchester, Kentucky
+                                39495
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <script>
         let currentSlide = 0;
-        const swiperDataWrappers = document.querySelector('.slider-content');
+        const swiperDataWrappers = document.querySelector('.slider-content .row');
         const swiperDataWrapperWidth = document.querySelector('.swiperDataWrapper').offsetWidth;
 
         function showSlide(n) {
@@ -835,13 +905,14 @@
         swiperDataWrappers.addEventListener('transitionend', () => {
             if (currentSlide === 0) {
                 swiperDataWrappers.style.transition = 'none';
-                currentSlide = swiperDataWrappers.children.length / 0;
+                currentSlide = swiperDataWrappers.children.length / 1;
                 showSlide(currentSlide);
                 setTimeout(() => {
                     swiperDataWrappers.style.transition = 'transform 0.5s ease-in-out';
                 });
             }
         });
+
     </script>
 
     <script src="script.js"></script>
