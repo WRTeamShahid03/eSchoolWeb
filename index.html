@@ -1,936 +1,1168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eSchool Web</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive .css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive .css" />
     <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
     <header class="topHeader">
-        <div class="container">
-            <div class="row divWrapper">
-                <div class="col-8 col-sm-8 col-md-8 col-lg-6">
-                    <div class="leftDiv">
-                        <span class="commonSpan">
-                            <i class="fa-solid fa-envelope-circle-check"></i>
-                            <a href="mailto:Schoolinfous@gmail.com">Schoolinfous@gmail.com</a>
-                        </span>
-                        <span class="commonSpan"><i class="fa-solid fa-phone-volume"></i>
-                            <a href="tel:+91 12345 67890">( +91 ) 12345 67890</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-4 col-sm-4 col-md-4 col-lg-6">
-                    <div class="rightDiv">
-                        <span class="commonSpan">Follow Us:</span>
-                        <span>
-                            <span>
-                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row divWrapper">
+          <div class="col-8 col-sm-8 col-md-8 col-lg-6">
+            <div class="leftDiv">
+              <span class="commonSpan">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <a href="mailto:Schoolinfous@gmail.com"
+                  >Schoolinfous@gmail.com</a
+                >
+              </span>
+              <span class="commonSpan"
+                ><i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:+91 12345 67890">( +91 ) 12345 67890</a>
+              </span>
             </div>
+          </div>
+          <div class="col-4 col-sm-4 col-md-4 col-lg-6">
+            <div class="rightDiv">
+              <span class="commonSpan">Follow Us:</span>
+              <span>
+                <span>
+                  <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/wrteam"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- topHeader ends here  -->
 
     <header class="navbar">
-        <div class="container">
-            <div class="navbarWrapper">
-                <div class="navLogoWrapper">
-                    <div class="navLogo">
-                        <a href="index.html">
-                            <img src="./Images/Logo.svg" alt="">
-                        </a>
-
-                    </div>
-                </div>
-                <div class="menuListWrapper">
-                    <ul class="listItems">
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about-us.html">About Us</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Gallery
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/photos.html">Photos</a></li>
-                                    <hr>
-                                    <li><a class="dropdown-item" href="/videos.html">Videos</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/contact-us.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <div class="hamburg">
-                        <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></span>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="navbarWrapper">
+          <div class="navLogoWrapper">
+            <div class="navLogo">
+              <a href="index.html">
+                <img src="./Images/Logo.svg" alt="" />
+              </a>
             </div>
+          </div>
+          <div class="menuListWrapper">
+            <ul class="listItems">
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="/about-us.html">About Us</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Gallery
+                  </a>
 
-
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <div class="navLogoWrapper">
-                        <div class="navLogo">
-                            <img src="./Images/Logo.svg" alt="">
-                        </div>
-                    </div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="/photos.html">Photos</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="/videos.html">Videos</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="listItems">
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about-us.html">About Us</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Gallery
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/photos.html">Photos</a></li>
-                                    <hr>
-                                    <li><a class="dropdown-item" href="/videos.html">Videos</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/contact-us.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+              </li>
+              <li>
+                <a href="/contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="hamburg">
+              <span
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
             </div>
+          </div>
         </div>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="navLogoWrapper">
+              <div class="navLogo">
+                <img src="./Images/Logo.svg" alt="" />
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="listItems">
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="/about-us.html">About Us</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Gallery
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="/photos.html">Photos</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="/videos.html">Videos</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="/contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- navbar ends here  -->
 
     <div class="main">
+      <section class="heroSection">
+        <div class="owl-carousel owl-theme hero-carousel">
+          <div class="item">
+            <img src="./Images/heroImg1.png" alt="" class="swiperImage" />
+          </div>
+          <div class="item">
+            <img src="./Images/heroImg2.png" alt="" class="swiperImage" />
+          </div>
+          <div class="item">
+            <img src="./Images/heroImg3.png" alt="" class="swiperImage" />
+          </div>
+          <div class="item">
+            <img src="./Images/heroImg4.png" alt="" class="swiperImage" />
+          </div>
+        </div>
+      </section>
 
-        <section class="heroSection">
-            <swiper-container class="mySwiper swiper-container" data-swiper-autoplay="1000" autoplay>
-                <swiper-slide>
-                    <img src="./Images/heroImg1.png" alt="" class="swiperImage">
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./Images/heroImg2.png" alt="" class="swiperImage">
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./Images/heroImg3.png" alt="" class="swiperImage">
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./Images/heroImg4.png" alt="" class="swiperImage">
-                </swiper-slide>
-            </swiper-container>
-        </section>
-        <!-- heroSection ends here  -->
+      <!-- heroSection ends here  -->
 
-        <section class="aboutUs commonMT">
-            <div class="container">
-                <div class="row aboutWrapper">
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <div class="aboutImgWrapper">
-                            <img src="./Images/dummyImg.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <div class="aboutContentWrapper">
-                            <span class="commonTag">
-                                About Us
-                            </span>
-                            <span class="commonTitle">
-                                Cutting-Edge Education
-                                That Empowers
-                            </span>
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet consectetur. Faucibus non mauris risus enim sed. Lectus fusce
-                                elit duis dignissim aliquet nisl vitae. Eget sit nisi vulputate enim sem. Facilisi
-                                tincidunt donec interdum in in eros quisque consectetur sit. Sagittis purus velit amet
-                                risus egestas sed arcu nam. Pellentesque pharetra blandit fringilla volutpat tristique
-                                sit. Sit euismod praesent volutpat eu et. Id egestas dictum cursus purus morbi semper
-                                praesent quam.
-                            </span>
-                            <button class="commonBtn">
-                                <a href="/about-us.html">Read More </a> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
+      <section class="aboutUs commonMT">
+        <div class="container">
+          <div class="row aboutWrapper">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="aboutImgWrapper">
+                <img src="./Images/dummyImg.png" alt="" />
+              </div>
             </div>
-        </section>
-        <!-- aboutUs ends here  -->
 
-        <section class="programs commonMT">
-            <div class="container">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="aboutContentWrapper">
+                <span class="commonTag"> About Us </span>
+                <span class="commonTitle">
+                  Cutting-Edge Education That Empowers
+                </span>
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet consectetur. Faucibus non mauris
+                  risus enim sed. Lectus fusce elit duis dignissim aliquet nisl
+                  vitae. Eget sit nisi vulputate enim sem. Facilisi tincidunt
+                  donec interdum in in eros quisque consectetur sit. Sagittis
+                  purus velit amet risus egestas sed arcu nam. Pellentesque
+                  pharetra blandit fringilla volutpat tristique sit. Sit euismod
+                  praesent volutpat eu et. Id egestas dictum cursus purus morbi
+                  semper praesent quam.
+                </span>
+                <button class="commonBtn">
+                  <a href="/about-us.html">Read More </a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- aboutUs ends here  -->
 
+      <section class="programs commonMT">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="flex_column_center">
+                <span class="commonTag"> Educational Programs </span>
+                <span class="commonTitle">
+                  Educational Programs for every Stage
+                </span>
+
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="programsCardWrapper">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="flex_column_center">
-                            <span class="commonTag">
-                                Educational Programs
-                            </span>
-                            <span class="commonTitle">
-                                Educational Programs for
-                                every Stage
-                            </span>
-
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                      <img
+                        src="./Images/programImg.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="cardTitle">
+                        <span>Pre-primary School</span>
+                      </div>
                     </div>
-
-                    <div class="col-lg-12">
-                        <div class="programsCardWrapper">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="./Images/programImg.png" class="card-img-top" alt="...">
-                                        <div class="cardTitle"><span>Pre-primary School</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="./Images/programImg.png" class="card-img-top" alt="...">
-                                        <div class="cardTitle"><span>Primary School</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="./Images/programImg.png" class="card-img-top" alt="...">
-                                        <div class="cardTitle"><span>Secondary School</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="card">
-                                        <img src="./Images/programImg.png" class="card-img-top" alt="...">
-                                        <div class="cardTitle"><span>Higher Secondary School</span></div>
-                                    </div>
-                                </div>
-
-                                <div class="sideImgs">
-                                    <img src="./Images/notes.svg" class="notesImg" alt="notesImg">
-                                    <img src="./Images/bulbImg.svg" class="bulbImg" alt="bulbImg">
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                      <img
+                        src="./Images/programImg.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="cardTitle"><span>Primary School</span></div>
                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                      <img
+                        src="./Images/programImg.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="cardTitle"><span>Secondary School</span></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                      <img
+                        src="./Images/programImg.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="cardTitle">
+                        <span>Higher Secondary School</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sideImgs">
+                    <img
+                      src="./Images/notes.svg"
+                      class="notesImg"
+                      alt="notesImg"
+                    />
+                    <img
+                      src="./Images/bulbImg.svg"
+                      class="bulbImg"
+                      alt="bulbImg"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- programs ends here  -->
+          </div>
+        </div>
+      </section>
+      <!-- programs ends here  -->
 
-        <section class="events commonMT container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="flex_column_center">
-                        <span class="commonTag">
-                            Our Events and News
-                        </span>
-                        <span class="commonTitle">
-                            Don't Miss the Biggest Events and
-                            News of the Year!
-                        </span>
+      <section class="events commonMT container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Our Events and News </span>
+              <span class="commonTitle">
+                Don't Miss the Biggest Events and News of the Year!
+              </span>
 
-                        <span class="commonDesc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="eventsCardWrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">26</span>
-                                        <span class="month">January, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Republic Day</span>
-                                        <span class="eventDesc">
-                                            On Republic Day, let's celebrate the spirit of unity and diversity. Happy
-                                            Holidays!</span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">17</span>
-                                        <span class="month">April, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Ram Navami</span>
-                                        <span class="eventDesc">
-                                            May Lord Rama's Blessings Shower Peace and Abundance. Happy Ram Navami!.
-                                            Happy Holidays!</span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">8</span>
-                                        <span class="month">March, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Maha Shivratri</span>
-                                        <span class="eventDesc">
-                                            May Lord Shiva's divine light guide you through darkness and illuminate your
-                                            path with wisdom and compassion.</span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">15</span>
-                                        <span class="month">August, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Independence Day</span>
-                                        <span class="eventDesc">
-                                            Let freedom ring! Celebrate the spirit of independence with family and
-                                            friends. Enjoy a safe and happy holiday!</span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">25</span>
-                                        <span class="month">March, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Dhuleti</span>
-                                        <span class="eventDesc">
-                                            Wishing you and your loved ones a joyous Dussehra filled with vibrant
-                                            colors, sweet treats, and the triumph of good over evil!
-                                        </span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="card">
-                                    <div class="eventDateWrapper">
-                                        <span class="date">19</span>
-                                        <span class="month">August, 2024</span>
-                                    </div>
-                                    <div class="eventDescWrapper">
-                                        <span class="eventTitle">Raksha Bandhan</span>
-                                        <span class="eventDesc">May the threads of love and protection bind us all.
-                                            Happy Raksha Bandhan!</span>
-                                        <span class="eventReadMoreBtn">Read More</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <span class="commonDesc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
             </div>
-        </section>
-        <!-- events ends here  -->
+          </div>
 
-        <section class="ourPhotos commonMT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="flex_column_center">
-                            <span class="commonTag">
-                                Our Photos
-                            </span>
-                            <span class="commonTitle">
-                                Capturing Memories,
-                                Building Dreams
-                            </span>
-
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
+          <div class="col-lg-12">
+            <div class="eventsCardWrapper">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">26</span>
+                      <span class="month">January, 2024</span>
                     </div>
-                    <div class="col-12">
-
-
-                        <div class="commonSlider">
-                            <div class="viewAllBtn">
-                                <button class="commonBtn">
-                                    <a href="./photos.html">
-                                        View All
-                                        <i class="fa-solid fa-circle-chevron-right"></i>
-                                    </a>
-                                </button>
-                            </div>
-
-                            <div class="slider-container">
-                                <div class="slider-content">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="navigationBtns">
-                                    <button class="prev commonBtn" onclick="changeSlide(-1)">
-                                        <i class="fa-solid fa-arrow-left"></i>
-                                    </button>
-                                    <button class="next commonBtn" onclick="changeSlide(1)">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Republic Day</span>
+                      <span class="eventDesc">
+                        On Republic Day, let's celebrate the spirit of unity and
+                        diversity. Happy Holidays!</span
+                      >
+                      <span class="eventReadMoreBtn">Read More</span>
                     </div>
+                  </div>
                 </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">17</span>
+                      <span class="month">April, 2024</span>
+                    </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Ram Navami</span>
+                      <span class="eventDesc">
+                        May Lord Rama's Blessings Shower Peace and Abundance.
+                        Happy Ram Navami!. Happy Holidays!</span
+                      >
+                      <span class="eventReadMoreBtn">Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">8</span>
+                      <span class="month">March, 2024</span>
+                    </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Maha Shivratri</span>
+                      <span class="eventDesc">
+                        May Lord Shiva's divine light guide you through darkness
+                        and illuminate your path with wisdom and
+                        compassion.</span
+                      >
+                      <span class="eventReadMoreBtn">Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">15</span>
+                      <span class="month">August, 2024</span>
+                    </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Independence Day</span>
+                      <span class="eventDesc">
+                        Let freedom ring! Celebrate the spirit of independence
+                        with family and friends. Enjoy a safe and happy
+                        holiday!</span
+                      >
+                      <span class="eventReadMoreBtn">Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">25</span>
+                      <span class="month">March, 2024</span>
+                    </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Dhuleti</span>
+                      <span class="eventDesc">
+                        Wishing you and your loved ones a joyous Dussehra filled
+                        with vibrant colors, sweet treats, and the triumph of
+                        good over evil!
+                      </span>
+                      <span class="eventReadMoreBtn">Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card">
+                    <div class="eventDateWrapper">
+                      <span class="date">19</span>
+                      <span class="month">August, 2024</span>
+                    </div>
+                    <div class="eventDescWrapper">
+                      <span class="eventTitle">Raksha Bandhan</span>
+                      <span class="eventDesc"
+                        >May the threads of love and protection bind us all.
+                        Happy Raksha Bandhan!</span
+                      >
+                      <span class="eventReadMoreBtn">Read More</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add a modal container -->
+              <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 id="fullEventTitle"></h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <div class="event-modal-body">
+                    <span id="fullEventDate"></span>
+                    <div id="fullEventDescription"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- events ends here  -->
 
-        </section>
-        <!-- ourPhotos ends here  -->
+      <section class="ourPhotos commonMT">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="flex_column_center">
+                <span class="commonTag"> Our Photos </span>
+                <span class="commonTitle">
+                  Capturing Memories, Building Dreams
+                </span>
 
-        <section class="ourPhotos ourVideos commonMT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="flex_column_center">
-                            <span class="commonTag">
-                                Our Videos
-                            </span>
-                            <span class="commonTitle">
-                                Rewind, Replay, Rejoice! Dive into Our Video Vault
-                            </span>
-
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="commonSlider">
-                            <div class="viewAllBtn">
-                                <button class="commonBtn">
-                                    <a href="./videos.html">
-                                        View All
-                                        <i class="fa-solid fa-circle-chevron-right"></i>
-                                    </a>
-                                </button>
-                            </div>
-
-                            <div class="slider-container">
-                                <div class="slider-content">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="swiperDataWrapper">
-                                                <div>
-                                                    <img src="./Images/programImg.png" alt="">
-                                                </div>
-                                                <div class="festival">
-                                                    <span>Youth Festival 2024</span>
-                                                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <!-- Navigation icons -->
-                                <div class="navigationBtns">
-                                    <button class="prev commonBtn" onclick="changeSlide(-1)">
-                                        <i class="fa-solid fa-arrow-left"></i>
-                                    </button>
-                                    <button class="next commonBtn" onclick="changeSlide(1)">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
             </div>
-
-        </section>
-        <!-- ourVideos ends here  -->
-
-        <section class="faqs commonMT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="flex_column_center">
-                            <span class="commonTag">
-                                FAQ'S
-                            </span>
-                            <span class="commonTitle">
-                                Got Questions? We've Got Answers!
-                                Dive into Our FAQs
-                            </span>
-
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span>
-                                            1. What are the admission requirements?
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras tristique varius.
-                                            Sit lacus vitae augue nisl. Sed condimentum feugiat id ac ac orci massa
-                                            consectetur urna.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span>
-                                            2. What financial aid or scholarship options are available to students?
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras tristique varius.
-                                            Sit lacus vitae augue nisl. Sed condimentum feugiat id ac ac orci massa
-                                            consectetur urna.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <span>
-                                            3. What kind of curriculum does School Name offer?
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras tristique varius.
-                                            Sit lacus vitae augue nisl. Sed condimentum feugiat id ac ac orci massa
-                                            consectetur urna.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        <span>
-                                            4. What extracurricular activities are available?
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras tristique varius.
-                                            Sit lacus vitae augue nisl. Sed condimentum feugiat id ac ac orci massa
-                                            consectetur urna.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
-                                        <span>
-                                            5. Does School offer financial aid?
-                                        </span>
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras tristique varius.
-                                            Sit lacus vitae augue nisl. Sed condimentum feugiat id ac ac orci massa
-                                            consectetur urna.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-12">
+              <div class="commonSlider">
+                <div class="viewAllBtn">
+                  <button class="commonBtn">
+                    <a href="./photos.html">
+                      View All
+                      <i class="fa-solid fa-circle-chevron-right"></i>
+                    </a>
+                  </button>
                 </div>
+
+                <div class="slider-content owl-carousel">
+                  <!-- Example slide -->
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <!-- Add more swiperDataWrapper elements here -->
+                </div>
+                <!-- Navigation buttons -->
+                <div class="navigationBtns">
+                  <button class="prev commonBtn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="next commonBtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ourPhotos ends here  -->
+
+      <section class="ourPhotos ourVideos commonMT">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="flex_column_center">
+                <span class="commonTag"> Our Videos </span>
+                <span class="commonTitle">
+                  Rewind, Replay, Rejoice! Dive into Our Video Vault
+                </span>
+
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="commonSlider">
+                <div class="viewAllBtn">
+                  <button class="commonBtn">
+                    <a href="./videos.html">
+                      View All
+                      <i class="fa-solid fa-circle-chevron-right"></i>
+                    </a>
+                  </button>
+                </div>
+
+                <div class="slider-content owl-carousel">
+                  <!-- Example slide -->
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div>
+                      <img src="./Images/programImg.png" alt="" />
+                    </div>
+                    <div class="festival">
+                      <span>Youth Festival 2024</span>
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                  <!-- Add more swiperDataWrapper elements here -->
+                </div>
+                <!-- Navigation buttons -->
+                <div class="navigationBtns">
+                  <button class="prev commonBtn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="next commonBtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ourVideos ends here  -->
+
+      <section class="faqs commonMT">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="flex_column_center">
+                <span class="commonTag"> FAQ'S </span>
+                <span class="commonTitle">
+                  Got Questions? We've Got Answers! Dive into Our FAQs
+                </span>
+
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
             </div>
 
-        </section>
-        <!-- faqs ends here  -->
-
-        <section class="ourApp commonMT container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="flex_column_center">
-                        <span class="commonTag">
-                            Download Our School Apps!
-                        </span>
-                        <span class="commonTitle">
-                            Empower Everyone: Teachers, Students, Parents - Get the App Now!
-                        </span>
-
-                        <span class="commonDesc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.
-                        </span>
+            <div class="col-12">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <span> 1. What are the admission requirements? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                        tristique varius. Sit lacus vitae augue nisl. Sed
+                        condimentum feugiat id ac ac orci massa consectetur
+                        urna.</span
+                      >
                     </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                    <div class="row wrapper">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="card">
-                                <span>
-                                    <img src="./Images/androidApp.svg" class="card-img-top" alt="...">
-                                </span>
-                                <span class="appName">Student & Parent App</span>
-                                <span class="demoBtn">
-                                    Android Demo
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="card">
-                                <span>
-                                    <img src="./Images/iosApp.svg" class="card-img-top" alt="...">
-                                </span>
-                                <span class="appName">Student & Parent App</span>
-                                <span class="demoBtn">
-                                    iOS Demo
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="card">
-                                <span>
-                                    <img src="./Images/androidApp.svg" class="card-img-top" alt="...">
-                                </span>
-                                <span class="appName">Teacher App</span>
-                                <span class="demoBtn">
-                                    Android Demo
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="card">
-                                <span>
-                                    <img src="./Images/iosApp.svg" class="card-img-top" alt="...">
-                                </span>
-                                <span class="appName">Teacher App</span>
-                                <span class="demoBtn">
-                                    iOS Demo
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </div>
-                        </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <span>
+                        2. What financial aid or scholarship options are
+                        available to students?
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                        tristique varius. Sit lacus vitae augue nisl. Sed
+                        condimentum feugiat id ac ac orci massa consectetur
+                        urna.</span
+                      >
                     </div>
+                  </div>
                 </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <span>
+                        3. What kind of curriculum does School Name offer?
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                        tristique varius. Sit lacus vitae augue nisl. Sed
+                        condimentum feugiat id ac ac orci massa consectetur
+                        urna.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <span>
+                        4. What extracurricular activities are available?
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                        tristique varius. Sit lacus vitae augue nisl. Sed
+                        condimentum feugiat id ac ac orci massa consectetur
+                        urna.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <span> 5. Does School offer financial aid? </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                        tristique varius. Sit lacus vitae augue nisl. Sed
+                        condimentum feugiat id ac ac orci massa consectetur
+                        urna.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- ourApp ends here  -->
+          </div>
+        </div>
+      </section>
+      <!-- faqs ends here  -->
+
+      <section class="ourApp commonMT container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Download Our School Apps! </span>
+              <span class="commonTitle">
+                Empower Everyone: Teachers, Students, Parents - Get the App Now!
+              </span>
+
+              <span class="commonDesc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row wrapper">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <span>
+                    <img
+                      src="./Images/androidApp.svg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </span>
+                  <span class="appName">Student & Parent App</span>
+                  <span class="demoBtn">
+                    Android Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <span>
+                    <img
+                      src="./Images/iosApp.svg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </span>
+                  <span class="appName">Student & Parent App</span>
+                  <span class="demoBtn">
+                    iOS Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <span>
+                    <img
+                      src="./Images/androidApp.svg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </span>
+                  <span class="appName">Teacher App</span>
+                  <span class="demoBtn">
+                    Android Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <span>
+                    <img
+                      src="./Images/iosApp.svg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </span>
+                  <span class="appName">Teacher App</span>
+                  <span class="demoBtn">
+                    iOS Demo
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ourApp ends here  -->
     </div>
 
     <footer class="commonMT">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="companyInfoWrapper">
-                        <div>
-                            <a href="index.html">
-                                <img src="./Images/Logo.svg" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <span class="commonDesc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna.
-                            </span>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="companyInfoWrapper">
+              <div>
+                <a href="index.html">
+                  <img src="./Images/Logo.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <span class="commonDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+              </div>
 
-                        <div class="socialIcons">
-                            <span>
-                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://www.instagram.com/wrteam.in" target="_blank">
-                                    <i class="fa-brands fa-square-instagram"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="https://twitter.com/wrteamin" target="_blank">
-                                    <i class="fa-brands fa-square-twitter"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="linksWrapper usefulLinksDiv">
-                        <span class="title">Useful Links</span>
-                        <span><a href="/index.html">Home</a></span>
-                        <span><a href="/about-us.html">About Us</a></span>
-                        <span><a href="/photos.html">Photos</a></span>
-                        <span><a href="/videos.html">Videos</a></span>
-                        <span><a href="/contact-us.html">Contact Us</a></span>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="linksWrapper">
-                        <span class="title">Quick Links</span>
-                        <span>
-                            <a href="">
-                                Admin Login
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                Terms & Conditioins
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                Privacy Policy
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="linksWrapper">
-                        <span class="title">Quick Links</span>
-                        <span class="iconsWrapper">
-                            <span>
-                                <i class="fa-solid fa-phone-volume"></i>
-                            </span>
-                            <span>
-                                (480) 555-0103
-                            </span>
-                        </span>
-                        <span class="iconsWrapper">
-                            <span>
-                                <i class="fa-solid fa-envelope-circle-check"></i>
-                            </span>
-                            <span>
-                                Testcompnay@mail,com
-                            </span>
-                        </span>
-                        <span class="iconsWrapper">
-                            <span>
-                                <i class="fa-solid fa-location-dot location"></i>
-                            </span>
-                            <span>
-                                4517 Washington Ave. Manchester, Kentucky
-                                39495
-                            </span>
-                        </span>
-                    </div>
-                </div>
-
+              <div class="socialIcons">
+                <span>
+                  <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://www.instagram.com/wrteam.in" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/wrteam"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://twitter.com/wrteamin" target="_blank">
+                    <i class="fa-brands fa-square-twitter"></i>
+                  </a>
+                </span>
+              </div>
             </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="linksWrapper usefulLinksDiv">
+              <span class="title">Useful Links</span>
+              <span><a href="/index.html">Home</a></span>
+              <span><a href="/about-us.html">About Us</a></span>
+              <span><a href="/photos.html">Photos</a></span>
+              <span><a href="/videos.html">Videos</a></span>
+              <span><a href="/contact-us.html">Contact Us</a></span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="linksWrapper">
+              <span class="title">Quick Links</span>
+              <span>
+                <a href=""> Admin Login </a>
+              </span>
+              <span>
+                <a href=""> Terms & Conditioins </a>
+              </span>
+              <span>
+                <a href=""> Privacy Policy </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="linksWrapper">
+              <span class="title">Quick Links</span>
+              <span class="iconsWrapper">
+                <span>
+                  <i class="fa-solid fa-phone-volume"></i>
+                </span>
+                <span> (480) 555-0103 </span>
+              </span>
+              <span class="iconsWrapper">
+                <span>
+                  <i class="fa-solid fa-envelope-circle-check"></i>
+                </span>
+                <span> Testcompnay@mail,com </span>
+              </span>
+              <span class="iconsWrapper">
+                <span>
+                  <i class="fa-solid fa-location-dot location"></i>
+                </span>
+                <span> 4517 Washington Ave. Manchester, Kentucky 39495 </span>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-
+    <!-- 
     <script>
-        let currentSlide = 0;
-        const swiperDataWrappers = document.querySelector('.slider-content .row');
-        const swiperDataWrapperWidth = document.querySelector('.swiperDataWrapper').offsetWidth;
+      let currentSlide = 0;
+      const swiperDataWrappers = document.querySelector(".slider-content .row");
+      const swiperDataWrapperWidth =
+        document.querySelector(".swiperDataWrapper").offsetWidth;
 
-        function showSlide(n) {
-            currentSlide = (n + swiperDataWrappers.children.length) % swiperDataWrappers.children.length;
+      function showSlide(n) {
+        currentSlide =
+          (n + swiperDataWrappers.children.length) %
+          swiperDataWrappers.children.length;
 
-            const transformValue = -currentSlide * swiperDataWrapperWidth + 'px';
-            swiperDataWrappers.style.transform = 'translateX(' + transformValue + ')';
+        const transformValue = -currentSlide * swiperDataWrapperWidth + "px";
+        swiperDataWrappers.style.transform =
+          "translateX(" + transformValue + ")";
+      }
+
+      function changeSlide(n) {
+        showSlide(currentSlide + n);
+      }
+
+      // Initial display
+      showSlide(0);
+
+      // Infinite loop by resetting the position after transition
+      swiperDataWrappers.addEventListener("transitionend", () => {
+        if (currentSlide === 0) {
+          swiperDataWrappers.style.transition = "none";
+          currentSlide = swiperDataWrappers.children.length / 1;
+          showSlide(currentSlide);
+          setTimeout(() => {
+            swiperDataWrappers.style.transition = "transform 0.5s ease-in-out";
+          });
         }
-
-        function changeSlide(n) {
-            showSlide(currentSlide + n);
-        }
-
-        // Initial display
-        showSlide(0);
-
-        // Infinite loop by resetting the position after transition
-        swiperDataWrappers.addEventListener('transitionend', () => {
-            if (currentSlide === 0) {
-                swiperDataWrappers.style.transition = 'none';
-                currentSlide = swiperDataWrappers.children.length / 1;
-                showSlide(currentSlide);
-                setTimeout(() => {
-                    swiperDataWrappers.style.transition = 'transform 0.5s ease-in-out';
-                });
-            }
-        });
-
-    </script>
+      });
+    </script> -->
 
     <script src="script.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize each carousel separately
+        $(".slider-content.owl-carousel").each(function () {
+          var owl = $(this).owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 3,
+              },
+              1000: {
+                items: 5,
+              },
+            },
+          });
+
+          // Custom navigation buttons for this specific carousel
+          $(this)
+            .closest(".commonSlider")
+            .find(".prev")
+            .click(function () {
+              owl.trigger("prev.owl.carousel");
+            });
+
+          $(this)
+            .closest(".commonSlider")
+            .find(".next")
+            .click(function () {
+              owl.trigger("next.owl.carousel");
+            });
+        });
+      });
+
+      $(document).ready(function () {
+        $(".hero-carousel").owlCarousel({
+          items: 1,
+          loop: false,
+          autoplay: true,
+          autoplayTimeout: 2000, // Set autoplay interval in milliseconds
+          autoplayHoverPause: true, // Pause autoplay when mouse hovers over the carousel
+          nav: true,
+          navText: [
+            "<i class='fa-solid fa-arrow-left'></i>",
+            "<i class='fa-solid fa-arrow-right'></i>",
+          ],
+        });
+      });
+    </script>
+
     <!-- bootstrap  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- fontawesome icons   -->
-    <script src="https://kit.fontawesome.com/1d2a297b20.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1d2a297b20.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- swiper  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <!-- swiper  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
