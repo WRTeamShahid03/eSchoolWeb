@@ -22,6 +22,10 @@ body {
   background-color: #fff;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none !important;
   color: #29363f !important;
@@ -510,6 +514,7 @@ a {
 .events .eventsCardWrapper .eventDescWrapper .eventDesc {
   font-size: 14px;
   font-weight: 500;
+  padding-right: 2px;
 }
 
 /* events ends here  */
@@ -566,7 +571,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
   margin-top: 30px;
 }
 
@@ -791,11 +796,14 @@ a {
 footer {
   background: rgba(56, 163, 165, 0.08);
   padding: 50px 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 575px) {
   footer {
     padding: 20px;
+    padding-bottom: 0px;
+
   }
 }
 
@@ -821,7 +829,7 @@ footer .socialIcons {
 footer .socialIcons span {
   background-color: #38a3a51f;
   color: var(--secondary-color1) !important;
-  padding: 4px 14px;
+  padding: 10px 16px;
   border-radius: 4px;
   font-size: 24px;
   cursor: pointer;
@@ -881,6 +889,21 @@ footer .iconsWrapper .location {
 
 footer .linksWrapper i {
   color: var(--secondary-color1);
+}
+
+footer .copyRightText {
+  border-top: 1px solid #8080804a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 40px 0px;
+}
+
+footer .copyRightText span {
+  color: #5C788C;
+  font-weight: 500;
+
 }
 
 /* home page ends here  */
@@ -1172,7 +1195,7 @@ footer .linksWrapper i {
 
 .contactUs .contactCardsWrapper .card .contactDetailsWrapper .numb {
   font-weight: 500;
-  color: var(--text--secondary-color);
+  color: #A5B7C4;
 }
 
 .contactUs .mainCardWrapper {
@@ -1289,6 +1312,9 @@ input::-webkit-inner-spin-button {
   /* 5% from the top and centered */
   padding: 20px;
 }
+.modal-header {
+  padding: 0px !important;
+}
 
 /* Disable scrolling on the body when modal is open */
 .modal-open {
@@ -1314,6 +1340,7 @@ input::-webkit-inner-spin-button {
 
 .eventReadMoreBtn {
   cursor: pointer;
+  font-weight: 700;
 }
 
 .event-modal-body {
@@ -1329,8 +1356,8 @@ input::-webkit-inner-spin-button {
 
 .event-modal-body #fullEventDescription {
   margin-top: 30px;
-
 }
+
 
 
 /* Navigation buttons */

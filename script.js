@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const eventDescElements = document.querySelectorAll(".eventDesc");
-
     eventDescElements.forEach(function (eventDescElement) {
         const originalText = eventDescElement.textContent;
         const maxLength = 80;
         const readMoreBtn = eventDescElement.nextElementSibling; // Assuming the button is a sibling
-
         if (originalText.length > maxLength) {
             const truncatedText = originalText.substring(0, maxLength) + "...";
             eventDescElement.textContent = truncatedText;
@@ -13,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             readMoreBtn.style.display = "none"; // Hide the button
         }
-
         // Add event listener to "Read More" button
         readMoreBtn.addEventListener("click", function () {
             // Get the title from eventDescWrapper
@@ -26,24 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("fullEventDate").textContent = `${date} ${month}`;
             document.getElementById("fullEventDescription").textContent = originalText;
             // Show the modal
-            document.getElementById("eventModal").style.display = "block";
+            const modal = document.getElementById("eventModal");
+            modal.style.display = "block";
+            // Disable scrolling
+            document.body.classList.add("modal-open");
         });
     });
-
     // Close the modal when the close button is clicked
     document.querySelector(".close").addEventListener("click", function () {
-        document.getElementById("eventModal").style.display = "none";
+        const modal = document.getElementById("eventModal");
+        modal.style.display = "none";
+        // Enable scrolling
+        document.body.classList.remove("modal-open");
     });
-
     // Close the modal when clicking outside of it
     window.addEventListener("click", function (event) {
         if (event.target == document.getElementById("eventModal")) {
-            document.getElementById("eventModal").style.display = "none";
+            const modal = document.getElementById("eventModal");
+            modal.style.display = "none";
+            // Enable scrolling
+            document.body.classList.remove("modal-open");
         }
     });
 });
-
-
 
 
 // swiper script 
