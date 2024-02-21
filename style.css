@@ -98,7 +98,7 @@ a {
   cursor: pointer;
 }
 
-.topHeader .rightDiv i:hover{
+.topHeader .rightDiv i:hover {
   color: var(--secondary-color1);
 }
 
@@ -144,7 +144,8 @@ a {
   color: #29363f;
   text-decoration: none;
 }
-.navbar .dropdown-menu.show{
+
+.navbar .dropdown-menu.show {
   padding: 0px;
   margin-top: 12px;
 }
@@ -212,7 +213,7 @@ a {
   margin-top: 96px;
 }
 
-.heroSection .owl-nav button:hover{
+.heroSection .owl-nav button:hover {
   background-color: var(--secondary-color1) !important;
   color: white !important;
 }
@@ -548,10 +549,8 @@ a {
 } */
 
 .commonSlider .swiperDataWrapper {
-  /* flex: 0 0 5%; */
   box-sizing: border-box;
   text-align: center;
-  /* width: 240px; */
   position: relative;
   display: flex;
   align-items: center;
@@ -559,7 +558,7 @@ a {
   transition: all 0.3s;
 }
 
-.commonSlider .swiperDataWrapper div:first-child{
+.commonSlider .swiperDataWrapper div:first-child {
   width: 96%;
 }
 
@@ -812,7 +811,7 @@ footer .row {
   gap: 30px 0px;
 }
 
-footer .socialIcons{
+footer .socialIcons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1011,18 +1010,22 @@ footer .linksWrapper i {
   }
 }
 
+.ourTeacher .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
 .ourTeacher .commonSlider .card {
   background-color: white;
   padding: 6px;
   border: none;
   border-radius: 4px;
   gap: 20px;
-  box-shadow: rgb(0 0 0 / 8%) 0px 5px 15px 0px;
+  box-shadow: 0px 7px 28px 2px #9696A124 !important;
   transition: box-shadow 0.3s;
 }
 
 .ourTeacher .commonSlider .card:hover {
-  box-shadow: rgb(0 0 0 / 14%) 0px 5px 15px 0px;
+  box-shadow: rgb(0 0 0 / 14%) 0px 5px 15px 0px !important;
 }
 
 .ourTeacher .commonSlider .card img {
@@ -1065,7 +1068,7 @@ footer .linksWrapper i {
   border-radius: 4px;
 }
 
-.photosGallery .card div:first-child{
+.photosGallery .card div:first-child {
   width: 100%;
 }
 
