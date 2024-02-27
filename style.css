@@ -1347,6 +1347,12 @@ input::-webkit-inner-spin-button {
   margin-top: 20px;
 }
 
+.eventReadMoreBtn {
+  cursor: pointer;
+}
+.event-modal-body {
+  margin-top: 20px;
+}
 .event-modal-body #fullEventDate {
   padding: 10px;
   background-color: var(--primary-color);
@@ -1358,6 +1364,10 @@ input::-webkit-inner-spin-button {
   margin-top: 30px;
 }
 
+/* Disable scrolling when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
 
 
 /* Navigation buttons */
@@ -1390,4 +1400,8 @@ input::-webkit-inner-spin-button {
 .owl-prev:focus,
 .owl-next:focus {
   outline: none;
+}
+
+.hero-carousel img {
+  max-height: 80vh;
 }

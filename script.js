@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const eventDescElements = document.querySelectorAll(".eventDesc");
+
     eventDescElements.forEach(function (eventDescElement) {
         const originalText = eventDescElement.textContent;
         const maxLength = 80;
         const readMoreBtn = eventDescElement.nextElementSibling; // Assuming the button is a sibling
+
         if (originalText.length > maxLength) {
             const truncatedText = originalText.substring(0, maxLength) + "...";
             eventDescElement.textContent = truncatedText;
@@ -11,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             readMoreBtn.style.display = "none"; // Hide the button
         }
+
         // Add event listener to "Read More" button
         readMoreBtn.addEventListener("click", function () {
             // Get the title from eventDescWrapper
@@ -29,13 +32,32 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.add("modal-open");
         });
     });
+
     // Close the modal when the close button is clicked
     document.querySelector(".close").addEventListener("click", function () {
         const modal = document.getElementById("eventModal");
         modal.style.display = "none";
         // Enable scrolling
         document.body.classList.remove("modal-open");
+    })
+});
+
+
+// swiper script 
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
+
     // Close the modal when clicking outside of it
     window.addEventListener("click", function (event) {
         if (event.target == document.getElementById("eventModal")) {
@@ -46,20 +68,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
-// swiper script 
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".swiper-container", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  });
